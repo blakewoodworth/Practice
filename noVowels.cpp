@@ -38,12 +38,14 @@ void remVowel(std::string *bef, std::string *aft) {
 int main() {
 	std::string input;
 	char c;
-	while ((c = getchar()) != EOF) {
+	std::cout << "This is the vowel-remover, please enter a string: " << std::endl;
+	while ((c = getchar()) != '\n' && c != EOF) {
 		input.push_back(c);
 	}
 	std::string output;
 	remVowel(&input, &output);
-	std::cout << "Before: " << input << std::endl;
-	std::cout << "After:  " << output << std::endl;
+	std::cout << std::endl;
+	std::cout << "With vowels:   " << input << std::endl;
+	std::cout << "Without:       " << output << std::endl;
 	return 0;
 }
