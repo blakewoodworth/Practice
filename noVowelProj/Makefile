@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -std=c++11 -pedantic -g3 -Wall
 
-BUILDDIR = build
+BUILDDIR = ../build
 TARGET = ${BUILDDIR}/noVowels
 
 all: ${TARGET} clean
